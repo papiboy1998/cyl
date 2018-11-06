@@ -118,12 +118,12 @@
                         <div class="col-12">
                             <div class="border-line"></div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-md-12 text-center">
                             <div class="copywrite-text">
                                 <p>&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <!-- <div class="col-12 col-md-6">
                             <div class="footer-nav">
                                 <nav>
                                     <ul>
@@ -135,7 +135,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

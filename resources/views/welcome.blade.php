@@ -12,11 +12,11 @@
     </div>
     <!-- ##### Breadcrumb Area End ##### -->
 
-    <section class="checkout_area section-padding-100-0">
+    <section class="checkout_area section-padding-50-50">
     <div class="container">
             <div class="row justify-content-between">
 
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-5">
                     <div class="checkout_details_area clearfix">
                         <h5>The Best Leads In the MCA Industry</h5>
                         <p>Fully Qualified Leads. 8 Years of experience in the MCA and Merchant Services Industries.</p>
@@ -53,49 +53,40 @@
                                     <label for="phone_number">Phone Number *</label>
                                     <input type="text" class="form-control" id="phone_number" min="0" value="">
                                 </div>
-                                
-                                <!-- <div class="col-12 mr-30">
-                                    <div class="d-flex align-items-center">
-                                        <div class="custom-control custom-checkbox d-flex align-items-center">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                            <label class="custom-control-label" for="customCheck1">Posted Webform Leads</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mr-30">
-                                    <div class="d-flex align-items-center">
-                                        <div class="custom-control custom-checkbox d-flex align-items-center">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                            <label class="custom-control-label" for="customCheck2">Live Transfers</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mr-30">
-                                    <div class="d-flex align-items-center">
-                                        <div class="custom-control custom-checkbox d-flex align-items-center">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                            <label class="custom-control-label" for="customCheck2">Aged Data</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mr-30">
-                                    <div class="d-flex align-items-center">
-                                        <div class="custom-control custom-checkbox d-flex align-items-center">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                            <label class="custom-control-label" for="customCheck2">Cash Discount Processing</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mr-30">
-                                    <div class="d-flex align-items-center">
-                                        <div class="custom-control custom-checkbox d-flex align-items-center">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                            <label class="custom-control-label" for="customCheck2">TCPA Litigator List</label>
-                                        </div>
-                                    </div>
-                                </div> -->
 
-                                <div class="col-12 col-lg-12 text-center">
+                                <div class="col-12 col-md-12 col-lg-12">
+                                    <div class="shop-widget catagory mb-50">
+                                        <div class="widget-desc">
+                                            <!-- Single Checkbox -->
+                                            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Posted Webform Leads</label>
+                                            </div>
+                                            <!-- Single Checkbox -->
+                                            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">Live Transfers</label>
+                                            </div>
+                                            <!-- Single Checkbox -->
+                                            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck3">Aged Data</label>
+                                            </div>
+                                            <!-- Single Checkbox -->
+                                            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label" for="customCheck4">Cash Discount Processing</label>
+                                            </div>
+                                            <!-- Single Checkbox -->
+                                            <div class="custom-control custom-checkbox d-flex align-items-center mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                <label class="custom-control-label" for="customCheck5">TCPA Litigator List</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-12 text-center mr-30">
                                     <a href="#" class="btn alazea-btn">Get Started</a>
                                 </div>
 
@@ -103,7 +94,6 @@
                         </form>
                     </div>
                 </div>
-
                 
             </div>
         </div>

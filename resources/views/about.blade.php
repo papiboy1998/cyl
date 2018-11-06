@@ -13,7 +13,7 @@
     <!-- ##### Breadcrumb Area End ##### -->
 
     <!-- ##### Service Area Start ##### -->
-    <section class="our-services-area section-padding-100-0">
+    <section class="our-services-area section-padding-50-50">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -60,6 +60,8 @@
 
                     </div>
                 </div>
+
+                <div class="col-12 mb-4"></div>
 
             </div>
         </div>

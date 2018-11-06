@@ -12,7 +12,7 @@
     </div>
     <!-- ##### Breadcrumb Area End ##### -->
 
-    <section class="portfolio-details-area section-padding-100-0">
+    <section class="portfolio-details-area section-padding-50-50">
         
         <div class="container">
             <div class="portfolio-text mb-20">

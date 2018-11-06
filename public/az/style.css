@@ -38,7 +38,7 @@ h6 {
 
 p {
   color: #707070;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.7;
   font-weight: 400; }
 
@@ -52,6 +52,18 @@ a:focus {
   color: #303030;
   font-weight: 500;
   font-size: 14px; }
+
+span{
+  font-size: 16px;
+}
+
+h5{
+  font-size: 30px;
+}
+
+.container {
+  max-width: 1250px;
+}
 
 ul,
 ol {
@@ -146,6 +158,10 @@ img {
   padding-top: 100px;
   padding-bottom: 70px; }
 
+.section-padding-50-50 {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
 /* :: 3.4.0 Section Heading */
 .section-heading {
   position: relative;
@@ -159,7 +175,7 @@ img {
       .section-heading h2 {
         font-size: 24px; } }
   .section-heading p {
-    font-size: 16px;
+    font-size: 20px;
     color: #707070;
     margin-bottom: 0; }
 
@@ -1843,8 +1859,13 @@ img {
 
 /* :: 17.0 Footer Area CSS */
 .footer-area {
+  /* position:absolute;
+  bottom:0;
+  width:100%; */
+
   position: relative;
-  z-index: 1; }
+  z-index: 1; 
+}
   .footer-area::after {
     background-color: rgba(4, 43, 15, 0.8);
     position: absolute;
@@ -1959,7 +1980,7 @@ img {
           text-align: center;
           padding-bottom: 0; } }
       .footer-area .footer-bottom-area .copywrite-text p {
-        font-size: 14px;
+        font-size: 16px;
         color: #b7b7b7;
         font-weight: 400;
         margin-bottom: 0; }
@@ -2025,7 +2046,7 @@ img {
         height: 220px; } }
     .breadcrumb-area .top-breadcrumb-area h2 {
       margin-top: 132px;
-      font-size: 36px;
+      font-size: 50px;
       color: #ffffff;
       margin-bottom: 0;
       line-height: 1;
