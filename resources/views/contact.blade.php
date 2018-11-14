@@ -3,55 +3,64 @@
 
 @section('content')
 
-    <!-- ##### Breadcrumb Area Start ##### -->
-    <div class="breadcrumb-area">
-        <!-- Top Breadcrumb Area -->
-        <div class="top-breadcrumb-area bg-img bg-overlay d-flex align-items-center justify-content-center" style="background-image: url(az/img/bg-img/24.jpg);">
-            <h2>Contact US</h2>
-        </div>
-    </div>
-    <!-- ##### Breadcrumb Area End ##### -->
-
-    <!-- ##### Contact Area Info Start ##### -->
-    <div class="contact-area-info section-padding-50-50">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-
-                <div class="col-12 col-lg-12">
-                    <div class="checkout_details_area clearfix">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 mb-4">
-                                    <label for="first_name">Your Name *</label>
-                                    <input type="text" class="form-control" id="first_name" value="" required>
-                                </div>
-                                <div class="col-md-6 mb-4">
-                                    <label for="last_name">Your Email *</label>
-                                    <input type="text" class="form-control" id="last_name" value="" required>
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="company">Subject</label>
-                                    <input type="text" class="form-control" id="company" value="">
-                                </div>
-                                <div class="col-12 mb-4">
-                                    <label for="email_address">Message</label>
-                                    <textarea class="form-control" name="message" id="message" cols="30" rows="30" placeholder=""></textarea>
-                                </div>
-                                <div class="col-12 col-lg-12 text-center mr-30">
-                                    <a href="#" class="btn alazea-btn">Send Message</a>
-                                </div>
-                                <div class="col-12 mb-4">
-                                </div>
-                                <div class="col-12 mb-4">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="divbox wow fadeInUp" data-wow-delay="450ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+            <h1>Contact us</h1>
+            <div class="contact">
+                <div class="contact-form">
+                    <form action="#" class="row ">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control main" placeholder="Your Name*" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control main" placeholder="Email Address*" required>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="text" class="form-control main" placeholder="Company name">
+                        </div>
+                        <div class="col-md-12 form-group">
+                            <textarea name="message" rows="5" class="form-control main" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-md-12 ">
+                            <button class="getstarted" type="submit">SEND MESSAGE</button>
+                        </div>
+                    </form>
                 </div>
+			</div>
+			<div class="clear"></div>
+		</div>
+    </div>
+</section>
 
+<div class="popup" data-popup="popup-1">
+	<div class="popup-inner">
+		<h2>Get FREE consulltation!</h2>
+		<div class="contact">
+            <div class="contact-form">
+                <form action="#">                       
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control main" placeholder="First Name*" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control main" placeholder="Last Name*" required>
+                    </div>                        
+                    <div class="col-md-12">
+                        <input type="text" class="form-control main" placeholder="Company name">
+                    </div>
+                    <div class="col-md-12">
+                        <input type="text" class="form-control main" placeholder="Phone Number*" required>
+                    </div>
+                    <div class="col-md-12 ">
+                        <button class="getstarted" type="submit">GET CONSULLTATION</button>
+                    </div>
+                </form>
             </div>
         </div>
-    </div>
-    <!-- ##### Contact Area Info End ##### -->
+		<a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+		<div class="clear" style="height:30px"></div>
+	</div>
+</div>
 
 @endsection

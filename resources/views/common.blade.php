@@ -1,158 +1,99 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
+<!DOCTYPE html>
+<html>
     <head>
-        <!--====== USEFULL META ======-->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <title>CASHYEW</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="" />
-        <meta name="keywords" content="mca, lead" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
 
-        <!--====== TITLE TAG ======-->
-        <title>{{ config('app.name', '') }}</title>
-        <link href="{{ asset('images/favicon.png') }}" rel="icon">
-        <link href="{{ asset('images/favicon.png') }}" rel="apple-touch-icon">
+        <link rel="stylesheet" href="{{ asset('cl/plugins/slick/slick.css') }}">
+        <link rel="stylesheet" href="{{ asset('cl/plugins/slick/slick-theme.css') }}">
+        <link rel="stylesheet" href="{{ asset('cl/plugins/fancybox/jquery.fancybox.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('cl/css/style.css') }}">
 
-        <!--====== FAVICON ICON =======-->
-        <link href="{{ asset('images/favicon.png') }}" rel="shortcut icon" type="image/ico">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="{{ asset('cl/js/mainscript.js') }}"></script>
 
-        <!--====== STYLESHEETS ======-->
-        <link rel="stylesheet" href="{{ asset('az/style.css') }}">
-
-        <!--[if lt IE 9]>
-            <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-            <![endif]-->
     </head>
 
-    <body>
+    <body>    
+        <div class="page-wrapper">        
+            <section class="header-uper">
+                <div class="container clearfix">
+                    <div class="logo wow fadeInUp" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                        <figure>
+                            <a href="index.html"><img src="{{ asset('cl/images/logo.png') }}" alt=""></a>
+                        </figure>
+                    </div>
+                    <div class="right-side wow fadeInUp" data-wow-delay="350ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">                  
+                        <div class="link-btn">
+                            <img src="{{ asset('cl/images/phone_icon.png') }}"> <?=$business_phone?>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{ url('/') }}">Home</a></li>
+                            <li><a href="{{ url('/mca-lead') }}">MCA Leads </a></li>
+                            <li><a href="{{ url('/cash-discount-lead') }}">Cash Discount Leads </a></li>
+                            <li><a href="{{ url('/about') }}">About Us</a></li>
+                            <li><a href="{{ url('/contact') }}">Contact</a></li>
+                            <li class="consultation"><a href="#" data-popup-open="popup-1">Free Consultation</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
 
-        <!-- Preloader -->
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-circle"></div>
-            <div class="preloader-img">
-                <img src="{{ asset('az/img/core-img/leaf.png') }}" alt="">
-            </div>
+            @yield('content')
+
+            <footer class="footer-main">
+                <div class="footer-bottom">
+                    <div class="container clearfix">
+                        <div class="row">
+                            <div class="col-md-4 c1  text-center">
+                                <div class="copyright-text"><p>© 2018, CashYew company. <br/>All rights reserved </p></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright-text social">
+                                    <img src="{{ asset('cl/images/facebook.png') }}">
+                                    <img src="{{ asset('cl/images/twitter.png') }}">
+                                    <img src="{{ asset('cl/images/googleplus.png') }}">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="copyright-text c2 text-center">
+                                <p>Design by <span class="lightyellow">ArtBelecky</span></p>
+                                </div>
+                            </div>            
+                        </div>		
+                    </div>			
+                </div>
+            </footer>
+
         </div>
 
-        <!-- ##### Header Area Start ##### -->
-        <header class="header-area">
-            <!-- ***** Top Header Area ***** -->
-            <div class="top-header-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="top-header-content d-flex align-items-center justify-content-between">
-                                <!-- Top Header Content -->
-                                <div class="top-header-meta">
-                                </div>
-                                <!-- Top Header Content -->
-                                <div class="top-header-meta d-flex">
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: <?=$business_mail?> </span></a>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: <?=$business_phone?></span></a>
-                                    <!-- Login -->
-                                    <!-- <div class="login">
-                                        <a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Login</span></a>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ***** Navbar Area ***** -->
-            <div class="alazea-main-menu">
-                <div class="classy-nav-container breakpoint-off">
-                    <div class="container">
-                        <!-- Menu -->
-                        <nav class="classy-navbar justify-content-between" id="alazeaNav">
-                            <!-- Nav Brand -->
-                            <a href="index.html" class="nav-brand"><img src="{{ asset('images/small_h_logo.png') }}" alt=""></a>
-                            <!-- Navbar Toggler -->
-                            <div class="classy-navbar-toggler">
-                                <span class="navbarToggler"><span></span><span></span><span></span></span>
-                            </div>
-                            <!-- Menu -->
-                            <div class="classy-menu">
-                                <!-- Close Button -->
-                                <div class="classycloseIcon">
-                                    <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                                </div>
-                                <!-- Navbar Start -->
-                                <div class="classynav">
-                                    <ul>
-                                        <li><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="{{ url('/mca-lead') }}">MCA Leads</a></li>
-                                        <li><a href="{{ url('/cash-discount-lead') }}">Cash Discount Leads</a></li>
-                                        <li><a href="{{ url('/about') }}">About Us</a></li>
-                                        <li><a href="{{ url('/contact') }}">Contact</a></li>
-                                    </ul>
-                                </div>
-                                <!-- Navbar End -->
-                            </div>
-                        </nav>
-                        <!-- Search Form -->
-                        <div class="search-form">
-                            <form action="#" method="get">
-                                <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
-                                <button type="submit" class="d-none"></button>
-                            </form>
-                            <!-- Close Icon -->
-                            <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- ##### Header Area End ##### -->
-
-        @yield('content')
-
-        <!-- ##### Footer Area Start ##### -->
-        <footer class="footer-area bg-img" style="background-image: url(az/img/bg-img/3.jpg);">
-            <div class="footer-bottom-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="border-line"></div>
-                        </div>
-                        <div class="col-12 col-md-12 text-center">
-                            <div class="copywrite-text">
-                                <p>&copy;Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
-                            </div>
-                        </div>
-                        <!-- <div class="col-12 col-md-6">
-                            <div class="footer-nav">
-                                <nav>
-                                    <ul>
-                                        <li><a href="{{ url('/') }}">Home</a></li>
-                                        <li><a href="#">MCA Leads</a></li>
-                                        <li><a href="#">Cash Discount Leads</a></li>
-                                        <li><a href="{{ url('/about') }}">About Us</a></li>
-                                        <li><a href="{{ url('/contact') }}">Contact</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- ##### Footer Area End ##### -->
-
-        <!-- ##### All Javascript Files ##### -->
-        <!-- jQuery-2.2.4 js -->
-        <script src="{{ asset('az/js/jquery/jquery-2.2.4.min.js') }}"></script>
-        <!-- Popper js -->
-        <script src="{{ asset('az/js/bootstrap/popper.min.js') }}"></script>
-        <!-- Bootstrap js -->
-        <script src="{{ asset('az/js/bootstrap/bootstrap.min.js') }}"></script>
-        <!-- All Plugins js -->
-        <script src="{{ asset('az/js/plugins/plugins.js') }}"></script>
-        <!-- Active js -->
-        <script src="{{ asset('az/js/active.js') }}"></script>
+        <script src="{{ asset('cl/plugins/jquery.js') }}"></script>
+        <script src="{{ asset('cl/plugins/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('cl/plugins/bootstrap-select.min.js') }}"></script>
+        <script src="{{ asset('cl/plugins/slick/slick.min.js') }}"></script>
+        <script src="{{ asset('cl/plugins/fancybox/jquery.fancybox.min.js') }}"></script>
+        <script src="{{ asset('cl/plugins/validate.js') }}"></script>
+        <script src="{{ asset('cl/plugins/wow.js') }}"></script>
+        <script src="{{ asset('cl/plugins/jquery-ui.js') }}"></script>
+        <script src="{{ asset('cl/js/script.js') }}"></script>
 
     </body>
 
